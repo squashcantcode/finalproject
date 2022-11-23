@@ -9,7 +9,7 @@ class BankAccount
 {
     public:
         BankAccount();
-        BankAccount::BankAccount(string accHolderName, string accHolderPassword, double checkingBalance, double creditBalance, double savingBalance);
+        BankAccount(string accHolderName, string accHolderPassword, double checkingBalance, double creditBalance, double savingBalance);
         void SetData(string accHolderName, string accHolderPassword, double checkingBalance, double creditBalance, double savingBalance);
         virtual void PrintInfo() = 0;
 
