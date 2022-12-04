@@ -11,14 +11,15 @@ class BankAccount
         BankAccount();
         BankAccount(string accHolderName, string accHolderPassword, double checkingBalance, double creditBalance, double savingBalance);
         void SetData(string accHolderName, string accHolderPassword, double checkingBalance, double creditBalance, double savingBalance);
+        virtual void withdraw(double cashO);
+        virtual void deposit(double cashI);
         virtual void PrintInfo() = 0;
 
     protected:
         string accountHolderName;
         string accountHolderPassword;
-        double checkingAccountBalance;
-        double creditAccountBalance;
-        double savingAccountBalance;
+        double cashIn;
+        double cashOut;
 };
 
 #endif

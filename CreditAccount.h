@@ -4,9 +4,9 @@
 class CreditAccount : public BankAccount
 {
 public:
-
-private:
-
+    
+protected:
+    double creditAccountBalance;
 };
 
 #endif

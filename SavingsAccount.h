@@ -6,7 +6,8 @@ class SavingsAccount : public BankAccount
 {
 public:
     double CalculateAPY(double interest);
-private:
+protected:
+    double savingsAccountBalance;
     double APY;
 
 };
