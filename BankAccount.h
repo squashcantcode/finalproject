@@ -9,10 +9,9 @@ class BankAccount
 {
     public:
         BankAccount();
-        BankAccount(string accHolderName, string accHolderPassword, double checkingBalance, double creditBalance, double savingBalance);
-        void SetData(string accHolderName, string accHolderPassword, double checkingBalance, double creditBalance, double savingBalance);
-        virtual void withdraw(double cashO);
-        virtual void deposit(double cashI);
+        BankAccount(string accHolderName, string accHolderPassword);
+        virtual void withdraw();
+        virtual void deposit();
         virtual void PrintInfo() = 0;
 
     protected:

@@ -4,21 +4,25 @@ BankAccount::BankAccount()
 {
     accountHolderName = "";
     accountHolderPassword = "";
-    checkingAccountBalance = 0.0;
-    creditAccountBalance = 0.0;
-    savingAccountBalance = 0.0;
 }
 
-BankAccount::BankAccount(string accHolderName, string accHolderPassword, double checkingBalance, double creditBalance, double savingBalance)
+BankAccount::BankAccount(string accName, string accPassword)
 {
-    SetData(accHolderName, accHolderPassword, checkingBalance, creditBalance, savingBalance);
+    accountHolderName = accName;
+    accountHolderPassword = accPassword;
 }
 
-void BankAccount::SetData(string accHolderName, string accHolderPassword, double checkingBalance, double creditBalance, double savingBalance)
+void BankAccount::deposit()
 {
-    accountHolderName = accHolderName;
-    accountHolderPassword = accHolderPassword;
-    checkingAccountBalance = checkingBalance;
-    creditAccountBalance = creditBalance;
-    savingAccountBalance = savingBalance;
+    cashIn = 0;
+}
+
+void BankAccount::withdraw()
+{
+    cashOut = 0;
+}
+
+void BankAccount::PrintInfo()
+{
+    cout << BankAccount::BankAccount(string accName, string accPassword) << endl;
 }
