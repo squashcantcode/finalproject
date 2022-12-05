@@ -3,10 +3,12 @@
 
 class CreditAccount : public BankAccount
 {
-public:
-    
-protected:
-    double creditAccountBalance;
+    public:
+        void withdraw();
+        void deposit();
+        void PrintItem() const;
+    protected:
+        double creditAccountBalance;
 };
 
 #endif

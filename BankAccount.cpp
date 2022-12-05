@@ -1,6 +1,6 @@
 #include "BankAccount.h"
 
-BankAccount::BankAccount()
+AccountCredentials::AccountCredentials()
 {
     accountUsername = "";
     accountPassword = "";

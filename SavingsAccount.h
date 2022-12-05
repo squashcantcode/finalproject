@@ -4,11 +4,14 @@
 
 class SavingsAccount : public BankAccount
 {
-public:
-    double CalculateAPY(double interest);
-protected:
-    double savingsAccountBalance;
-    double APY;
+    public:
+        void withdraw();
+        void deposit();
+        double CalculateAPY(double interest);
+        void PrintItem() const;
+    protected:
+        double savingsAccountBalance;
+        double APY;
 
 };
 
