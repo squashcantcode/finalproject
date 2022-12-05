@@ -9,16 +9,19 @@ class BankAccount
 {
     public:
         BankAccount();
-        BankAccount(string accHolderName, string accHolderPassword);
         virtual void withdraw();
         virtual void deposit();
-        virtual void PrintInfo() = 0;
-
     protected:
-        string accountHolderName;
-        string accountHolderPassword;
+        string accountUsername;
+        string accountPassword;
         double cashIn;
         double cashOut;
+};
+
+class AccountCredentials : public BankAccount
+{
+    public:
+        void PromptCredentials();
 };
 
 #endif

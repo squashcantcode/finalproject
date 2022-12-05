@@ -2,14 +2,8 @@
 
 BankAccount::BankAccount()
 {
-    accountHolderName = "";
-    accountHolderPassword = "";
-}
-
-BankAccount::BankAccount(string accName, string accPassword)
-{
-    accountHolderName = accName;
-    accountHolderPassword = accPassword;
+    accountUsername = "";
+    accountPassword = "";
 }
 
 void BankAccount::deposit()
@@ -22,7 +16,10 @@ void BankAccount::withdraw()
     cashOut = 0;
 }
 
-void BankAccount::PrintInfo()
+void AccountCredentials::PromptCredentials()
 {
-    cout << BankAccount::BankAccount(string accName, string accPassword) << endl;
+    cout << "Enter your username and password password below:" << endl;
+    cin >> accountUsername;
+    cout << endl;
+    cin >> accountPassword;
 }
