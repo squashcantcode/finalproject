@@ -1,5 +1,10 @@
 #include "SavingsAccount.h"
 
+SavingsAccount::SavingsAccount(double defaultBalance)
+{
+    savingsAccountBalance = defaultBalance;
+}
+
 void SavingsAccount::withdraw()
 {
     cout << "Enter amount to withdraw:" << endl;

@@ -1,5 +1,10 @@
 #include "CreditAccount.h"
 
+CreditAccount::CreditAccount(double defaultBalance)
+{
+    creditAccountBalance = defaultBalance;
+}
+
 void CreditAccount::withdraw()
 {
     cout << "Enter amount to withdraw:" << endl;

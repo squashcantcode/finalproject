@@ -10,6 +10,7 @@ using namespace std;
 class SavingsAccount : public BankAccount
 {
     public:
+        SavingsAccount(double defaultBalance);
         void withdraw();
         void deposit();
         double CalculateInterest();

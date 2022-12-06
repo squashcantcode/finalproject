@@ -10,6 +10,7 @@ using namespace std;
 class CheckingAccount : public BankAccount
 {
     public:
+        CheckingAccount(double defaultBalance);
         void withdraw();
         void deposit();
         void PrintInfo() const override;
