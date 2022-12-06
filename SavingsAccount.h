@@ -1,6 +1,11 @@
-#ifndef SAVINGSACCOUNT.H
-#define SAVINGSACCOUNT.H
+#ifndef SAVINGSACCOUNT_H
+#define SAVINGSACCOUNT_H
+
 #include <cmath>
+#include <iostream>
+#include "BankAccount.h"
+
+using namespace std;
 
 class SavingsAccount : public BankAccount
 {

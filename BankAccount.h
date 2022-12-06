@@ -1,5 +1,5 @@
-#ifndef BANKACCOUNT.H
-#define BANKACCOUNT.H
+#ifndef BANKACCOUNT_H
+#define BANKACCOUNT_H
 #include <iostream>
 #include <string>
 

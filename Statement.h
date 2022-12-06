@@ -1,11 +1,16 @@
-#ifndef STATEMENT.H
-#define STATEMENT.H
+#ifndef STATEMENT_H
+#define STATEMENT_H
+
+#include <iostream>
+#include "BankAccount.h"
+
+using namespace std;
 
 class Statement : public BankAccount
 {
-public:
+    public:
 
-private:
+    private:
 
 };
 
