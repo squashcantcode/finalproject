@@ -9,8 +9,8 @@ using namespace std;
 class BankAccount
 {
     public:
-        void withdraw();
-        void deposit();
+        virtual void withdraw();
+        virtual void deposit();
         virtual void PrintInfo() const = 0;
     protected:
         double cashIn;

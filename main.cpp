@@ -34,9 +34,9 @@ int main()
     createVector(accounts);
     for(int i = 0; i < accounts.size(); i++)
     {
-        cout << "List all the information about your accounts:" << endl;
+        cout << "List all the information about your accounts" << endl;
         accounts[i]->PrintInfo();
-        cout << "Withdraw any money you may need:" << endl;
+        cout << "Withdraw any money you may need" << endl;
         accounts[i]->withdraw();
         cout << "Deposit any money for future spending or investing" << endl;
         accounts[i]->deposit();

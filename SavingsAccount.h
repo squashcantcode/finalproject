@@ -11,8 +11,8 @@ class SavingsAccount : public BankAccount
 {
     public:
         SavingsAccount(double defaultBalance);
-        void withdraw();
-        void deposit();
+        void withdraw() override;
+        void deposit() override;
         double CalculateInterest();
         void PrintInfo() const override;
     protected:

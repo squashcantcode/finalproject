@@ -8,8 +8,8 @@ class CreditAccount : public BankAccount
 {
     public:
         CreditAccount(double defaultBalance);
-        void withdraw();
-        void deposit();
+        void withdraw() override;
+        void deposit() override;
         void PrintInfo() const override;
     protected:
         double creditAccountBalance;

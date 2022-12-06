@@ -11,8 +11,8 @@ class CheckingAccount : public BankAccount
 {
     public:
         CheckingAccount(double defaultBalance);
-        void withdraw();
-        void deposit();
+        void withdraw() override;
+        void deposit() override;
         void PrintInfo() const override;
     protected:
         double checkingAccountBalance;
