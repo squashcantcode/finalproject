@@ -8,7 +8,6 @@ using namespace std;
 class BankAccount
 {
     public:
-        BankAccount();
         void withdraw();
         void deposit();
         virtual void PrintInfo() const = 0;

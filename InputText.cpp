@@ -4,7 +4,7 @@
 using namespace sf;
 using namespace std;
 
-int main()
+int project()
 {
     // Get the screen resolution and create an SFML window
     Vector2f resolution;
@@ -63,4 +63,5 @@ int main()
         window.draw(text);
         window.display();
     }
+    return 0;
 }

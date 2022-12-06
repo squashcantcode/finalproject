@@ -1,6 +1,5 @@
 #ifndef SAVINGSACCOUNT_H
 #define SAVINGSACCOUNT_H
-
 #include <cmath>
 #include <iostream>
 #include "BankAccount.h"
@@ -13,7 +12,7 @@ class SavingsAccount : public BankAccount
         void withdraw();
         void deposit();
         double CalculateAPY(double interest);
-        void PrintItem() const;
+        virtual void PrintItem() const;
     protected:
         double savingsAccountBalance;
         double APY;

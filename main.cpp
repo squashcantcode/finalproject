@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+#include <string>
 #include "BankAccount.h"
 #include "CheckingAccount.h"
 #include "CreditAccount.h"
@@ -9,5 +11,10 @@ using namespace std;
 int main()
 {
     AccountCredentials UserCredentials;
-
+    vector<BankAccount*> accounts;
+    bool isDone = false;
+    while(!isDone)
+    {
+        UserCredentials.PromptCredentials();
+    }
 }
