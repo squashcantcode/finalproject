@@ -23,7 +23,7 @@ void SavingsAccount::deposit()
 
 double SavingsAccount::CalculateInterest()
 {
-    annualCompoundInterest = savingsAccountBalance * APY;
+    annualCompoundInterest = savingsAccountBalance + APY;
     savingsAccountBalance = annualCompoundInterest;
     cout << "Expected projection after annual compound interest with 5-year compounding period: " << fixed << setprecision(2) << "$" << savingsAccountBalance << endl;
 }
