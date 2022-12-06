@@ -10,11 +10,5 @@ using namespace std;
 
 int main()
 {
-    AccountCredentials UserCredentials;
     vector<BankAccount*> accounts;
-    bool isDone = false;
-    while(!isDone)
-    {
-        UserCredentials.PromptCredentials();
-    }
 }

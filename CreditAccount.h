@@ -1,6 +1,7 @@
 #ifndef CREDITACCOUNT_H
 #define CREDITACCOUNT_H
 #include <iostream>
+#include <iomanip>
 #include "BankAccount.h"
 
 class CreditAccount : public BankAccount
@@ -8,7 +9,7 @@ class CreditAccount : public BankAccount
     public:
         void withdraw();
         void deposit();
-        virtual void PrintItem() const;
+        void PrintInfo() const override;
     protected:
         double creditAccountBalance;
 };
