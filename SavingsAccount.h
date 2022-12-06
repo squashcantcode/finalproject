@@ -12,14 +12,14 @@ class SavingsAccount : public BankAccount
     public:
         void withdraw();
         void deposit();
-        double CalculateAPY(double interest);
+        double CalculateInterest();
         void PrintInfo() const override;
     protected:
         double savingsAccountBalance;
-        double APY;
+        const double APY = 0.05;
+        double annualCompoundInterest;
+        int compoundingPeriods = 5; //  As in 5 years.
 
 };
 
 #endif
-// Create APY 
-// Implement projected balance based on APY

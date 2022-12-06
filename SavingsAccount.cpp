@@ -5,7 +5,7 @@ void SavingsAccount::withdraw()
     cout << "Enter amount to withdraw:" << endl;
     cin >> cashIn;
     savingsAccountBalance =- cashIn;
-    cout << "New total:\n" << fixed << setprecision(2) << savingsAccountBalance << endl;
+    SavingsAccount::CalculateInterest();
 }
 
 void SavingsAccount::deposit()
@@ -13,7 +13,14 @@ void SavingsAccount::deposit()
     cout << "Enter amount to deposit:" << endl;
     cin >> cashOut;
     savingsAccountBalance =- cashOut;
-    cout << "New total:\n" << fixed << setprecision(2) << savingsAccountBalance << endl;
+    SavingsAccount::CalculateInterest();
+}
+
+double SavingsAccount::CalculateInterest()
+{
+    annualCompoundInterest = savingsAccountBalance*(pow(1+APY,compoundingPeriods)-savingsAccountBalance);
+    savingsAccountBalance = annualCompoundInterest;
+    cout << "Expected projection after annual compound interest with 5-year compounding period: " << fixed << setprecision(2) << savingsAccountBalance << endl;
 }
 
 void SavingsAccount::PrintInfo() const
