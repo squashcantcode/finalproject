@@ -12,10 +12,10 @@ int project()
     resolution.y = VideoMode::getDesktopMode().height;
 
     RenderWindow window(VideoMode(resolution.x, resolution.y),
-        "Zombie Arena", Style::Default);
+        "Bank Account", Style::Default);
 
     Font font;
-    font.loadFromFile("fonts/zombiecontrol.ttf");
+    font.loadFromFile("fonts/bankaccount.ttf");
 
     string input_text;
     Text text("", font);
